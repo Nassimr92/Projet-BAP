@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.mascottest{
+    width: 60%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 1fr) ;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+main > .mascotte{
+    background-color: rgb(176, 176, 176);
+    height: 280px;
+    border-radius: 30px;
+    gap: 10px;
+}
+
+/* @media screen and (max-width: 2048px) and (max-height: 1080) {
+
+    .mascottest {
+        width: 100px;
+        /* height: 10%; */
+        /* object-fit: cover; */
+    
+
+    /* main{
+        grid-template-columns: repeat(2, 1fr);
+    } */
