@@ -1,28 +1,21 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
-main {
+.choixmascotte {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
   padding: 10px;
 }
-main .mascotte {
+.choixmascotte .mascotte {
   background-color: rgb(176, 176, 176);
   height: 280px;
   border-radius: 30px;
   gap: 10px;
 }
-main .mascotte:hover, main .mascotte :active {
+.choixmascotte .mascotte:hover, .choixmascotte .mascotte :active {
   background-color: #589595;
   border: 2px solid rgba(191, 223, 223, 0.8156862745);
 }
-main .mascotte .mascottest {
+.choixmascotte .mascotte .mascottest {
   width: 60%;
 }
 
@@ -31,13 +24,72 @@ main .mascotte .mascottest {
   justify-content: center;
   width: 100px;
   padding: 20px;
-  border: 2px black solid;
+  border: 2px rgb(67, 91, 91);
   border-radius: 25px;
-  background-color: rgb(74, 165, 165);
+  background-color: rgb(163, 203, 203);
 }
 .suivant:hover {
   background-color: rgb(66, 114, 114);
   color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.index {
+  height: 100vh;
+  overflow: hidden;
+}
+.index img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(7px);
+}
+.index .bienvenue {
+  position: absolute;
+  top: 400px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  padding-top: 50px;
+  color: #FFFFFF;
+  -webkit-text-stroke-width: 5px;
+  -webkit-text-stroke-color: black;
+}
+.index .bienvenue h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+}
+.index .bienvenue h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+  font-size: 60px;
+}
+.index .bienvenue button {
+  width: 450px;
+  height: 150px;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+.index .bienvenue button a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */

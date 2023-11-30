@@ -1,45 +1,69 @@
+//
+@use "scss/abstracts/variables.scss" as *;
+@use "scss/base/typography.scss" as *;
+@use "scss/components/choix.scss" as *;
+@use "scss/components/nom.scss" as *;
+@use "scss/components/partage.scss" as *;
+@use "scss/components/personnalisation.scss" as *;
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: $font1;
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-  padding: 10px;
-
-  .mascotte {
-    background-color: rgb(176, 176, 176);
-    height: 280px;
-    border-radius: 30px;
-    gap: 10px;
-
-    &:hover, :active{
-        background-color: #589595;
-        border: 2px solid #bfdfdfd0;
+.index {
+  height: 100vh;
+  overflow: hidden;
+  img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(7px);
+  }
+  .bienvenue {
+    position: absolute;
+    top: 400px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    padding-top: 50px;
+    color: $white;
+    -webkit-text-stroke-width: 5px;
+    -webkit-text-stroke-color: black;
+    
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $size-title;
     }
 
-    .mascottest {
-      width: 60%;
+    h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 30px;
+      font-size: $size-subtitle;
+    }
+
+    button {
+      width: 450px;
+      height: 150px;
+      font-size: $size-subtitle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 20px;
+      margin: 0 auto;
+      margin-top: 70px;
+      a {
+        text-decoration: none;
+        color: $black;
+      }
     }
   }
-}
-
-.suivant{
-    display: flex;
-    justify-content: center;
-    width: 100px;
-    padding: 20px;
-    border: 2px black solid;
-    border-radius: 25px;
-    background-color: rgb(74, 165, 165);
-
-    &:hover{
-      background-color: rgb(66, 114, 114);
-      color: white;
-    }
 }
