@@ -1,9 +1,15 @@
+@font-face {
+    font-family:PatrickHand ;
+    src: url(font/PatrickHand-Regular.ttf);
+}
+
 // Fonts
-$font1 : "Poppins", sans-serif;
+$font1 : "PatrickHand";
+$font2 : "Poppins", sans-serif;
 
 // Font sizes
-$size-title: 80px;
-$size-subtitle: 60px;
+$size-title: 120px;
+$size-subtitle: 90px;
 $size-content: 18px;
 
 // Font weights

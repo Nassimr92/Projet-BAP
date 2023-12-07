@@ -1,3 +1,7 @@
+@font-face {
+  font-family: PatrickHand;
+  src: url(font/PatrickHand-Regular.ttf);
+}
 .choixmascotte {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -37,7 +41,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "PatrickHand";
 }
 
 .index {
@@ -66,14 +70,15 @@
 }
 .index .bienvenue h1 {
   text-align: center;
-  font-size: 80px;
+  font-size: 120px;
+  margin-inline: 100px;
 }
 .index .bienvenue h2 {
   text-align: center;
   padding-top: 30px;
-  font-size: 60px;
+  font-size: 90px;
   -webkit-text-fill-color: #FFFFFF;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 2px black;
 }
 .index .bienvenue button {
   display: flex;
@@ -81,7 +86,7 @@
   justify-content: center;
   width: 450px;
   height: 150px;
-  font-size: 60px;
+  font-size: 90px;
   border-radius: 20px;
   margin: 0 auto;
   margin-top: 70px;
