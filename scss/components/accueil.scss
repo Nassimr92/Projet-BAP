@@ -1,0 +1,72 @@
+@use "../abstracts/variables.scss" as *;
+@use "../base/typography.scss" as *;
+
+.prezmascotte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: radial-gradient($primary-color, $green);
+  h1 {
+    font-size: $size-title;
+  }
+}
+
+.carousel-container {
+  position: relative;
+  // max-width: 1800px; /* ou la largeur que tu souhaites */
+  // max-width: 30000px;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  gap: 30px;
+  // width: 1800px;
+}
+
+.carousel img {
+  scroll-snap-align: center;
+  flex: none;
+  width: 400px; /* taille des images non sélectionnées */
+  height: 500px;
+  transition: transform 0.5s ease;
+}
+
+.carousel img.selected {
+  transform: scale(1.5); /* l'image sélectionnée sera 50% plus grande */
+}
+
+.highlighted-mascot img {
+  width: 600px; /* ou la taille que tu souhaites pour l'image mise en avant */
+  height: auto;
+}
+
+.carousel-controls {
+  margin-top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  button {
+    display: none;
+  }
+  a {
+    margin-left: 280%;
+    font-size: 100px;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 28px;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+}

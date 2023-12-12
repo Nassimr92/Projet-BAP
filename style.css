@@ -1,52 +1,23 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
-
-.choixmascotte {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-  padding: 10px;
+@import url("https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap");
+@font-face {
+  font-family: "PatrickHand";
+  src: url("font/PatrickHand-Regular.ttf");
 }
-.choixmascotte .mascotte {
-  background-color: rgb(176, 176, 176);
-  height: 280px;
-  border-radius: 30px;
-  gap: 10px;
-}
-.choixmascotte .mascotte:hover, .choixmascotte .mascotte :active {
-  background-color: #589595;
-  border: 2px solid rgba(191, 223, 223, 0.8156862745);
-}
-.choixmascotte .mascotte .mascottest {
-  width: 60%;
-}
-
-.suivant {
-  display: flex;
-  justify-content: center;
-  width: 100px;
-  padding: 20px;
-  border: 2px rgb(67, 91, 91);
-  border-radius: 25px;
-  background-color: rgb(163, 203, 203);
-}
-.suivant:hover {
-  background-color: rgb(66, 114, 114);
-  color: white;
-}
-
-.index {
+.prezmascotte {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  background: radial-gradient(#9FB8E9, #27AE60);
+}
+.prezmascotte h1 {
+  font-size: 120px;
 }
 
 .carousel-container {
   position: relative;
-  max-width: 1800px; /* ou la largeur que tu souhaites */
   margin: auto;
 }
 
@@ -59,8 +30,8 @@
 .carousel img {
   scroll-snap-align: center;
   flex: none;
-  width: 100px; /* taille des images non sélectionnées */
-  height: 150px;
+  width: 400px; /* taille des images non sélectionnées */
+  height: 500px;
   transition: transform 0.5s ease;
 }
 
@@ -69,12 +40,12 @@
 }
 
 .highlighted-mascot img {
-  width: 400px; /* ou la taille que tu souhaites pour l'image mise en avant */
+  width: 600px; /* ou la taille que tu souhaites pour l'image mise en avant */
   height: auto;
 }
 
 .carousel-controls {
-  margin-top: 20px;
+  margin-top: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -85,14 +56,14 @@
   display: none;
 }
 .carousel-controls a {
-  margin-left: 600%;
-  font-size: 30px;
+  margin-left: 280%;
+  font-size: 100px;
   color: black;
   padding: 10px;
   cursor: pointer;
   text-decoration: none;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 28px;
   transition: all 0.3s ease-in-out;
 }
 .carousel-controls a:hover {
@@ -497,12 +468,19 @@
   margin: 5% 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Patrick Hand", cursive;
+}
+
 .index {
   display: flex;
   flex-direction: column;
-  height: 100vh;
   overflow: hidden;
   color: #FFFFFF;
+  overflow: hidden;
 }
 .index img {
   width: 100%;
@@ -547,6 +525,7 @@
 .index .bienvenue button a {
   text-decoration: none;
   color: #000000;
+  font-family: "Patrick Hand", cursive;
 }
 
 /*# sourceMappingURL=style.css.map */

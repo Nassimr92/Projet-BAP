@@ -1,16 +1,13 @@
 @use "scss/abstracts/variables.scss" as *;
 @use "scss/base/typography.scss" as *;
-@use "scss/components/choix.scss" as *;
-@use "scss/components/nom.scss" as *;
-@use "scss/components/partage.scss" as *;
-@use "scss/components/personnalisation.scss" as *;
+@use "scss/components/accueil.scss" as *;
+@use "scss/components/hauts.scss" as *;
+@use "scss/components/bas.scss" as *;
+@use "scss/components/accessoire.scss" as *;
+@use "scss/components/nomme.scss" as *;
+@use "scss/components/galerie.scss" as *;
 
-@import 'accueil.scss';
-@import 'hauts.scss';
-@import 'bas.scss';
-@import 'accessoire.scss';
-@import 'nomme.scss';
-@import 'galerie.scss';
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
 
 *{
@@ -18,16 +15,18 @@
   padding: 0;
   box-sizing: border-box;
   font-family: $font1;
+  
 }
 
 .index {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  // height: 100vh;
   overflow: hidden;
   color: $white;
   overflow: hidden;
-  
+  // font-family: 'Patrick Hand', cursive !important;
+
   img {
     width: 100%;
     height: 100vh;
@@ -72,6 +71,7 @@
       a {
         text-decoration: none;
         color: $black;
+        font-family: 'Patrick Hand', cursive;
       }
     }
   }

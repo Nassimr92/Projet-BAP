@@ -10,9 +10,8 @@ session_start();
     <title>Test BAP</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="index">
-    <h1>Test BAP</h1>
-    <p>Voici les mascottes de l'entreprise :</p>
+<body class="prezmascotte">
+    <h1>Voici les mascottes du musée :</h1>
     <?php
 $servername = "localhost"; // L'adresse du serveur, généralement localhost
 $username = "root"; // Votre nom d'utilisateur pour phpMyAdmin
