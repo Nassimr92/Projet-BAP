@@ -91,6 +91,6 @@ if(isset($_SESSION['selected_mascot']) && isset($_SESSION['selected_haut'])) {
 
 </div>
 
-<script src="bas.js"></script>
+<script src="js/bas.js"></script>
 </body>
 </html>

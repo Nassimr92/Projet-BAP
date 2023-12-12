@@ -87,6 +87,6 @@ if(isset($_SESSION['selected_mascot']) && isset($_SESSION['selected_haut']) && i
     ?>
 </div>
 </div>
-<script src="accessoire.js"></script>
+<script src="js/accessoire.js"></script>
 </body>
 </html>

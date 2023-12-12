@@ -108,6 +108,6 @@ if (isset($_POST['image']) && isset($_POST['nom_mascotte'])) {
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="nomme.js"></script>
+<script src="js/nomme.js"></script>
 </body>
 </html>

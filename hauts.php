@@ -91,6 +91,6 @@ if(isset($_SESSION['selected_mascot'])) {
 
 </div>
 
-<script src="haut.js"></script>
+<script src="js/haut.js"></script>
 </body>
 </html>
