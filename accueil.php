@@ -10,8 +10,9 @@ session_start();
     <title>Test BAP</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="prezmascotte">
-    <h1>Voici les mascottes du musée :</h1>
+<body class="index">
+    <h1>Test BAP</h1>
+    <p>Voici les mascottes de l'entreprise :</p>
     <?php
 $servername = "localhost"; // L'adresse du serveur, généralement localhost
 $username = "root"; // Votre nom d'utilisateur pour phpMyAdmin
@@ -82,7 +83,7 @@ if(isset($_POST['selectedMascotUrl'])) {
 
 
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
 
